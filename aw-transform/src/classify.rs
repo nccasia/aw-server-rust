@@ -1,6 +1,6 @@
 /// Transforms for classifying (tagging and categorizing) events.
 ///
-/// Based on code in aw_research: https://github.com/ActivityWatch/aw-research/blob/master/aw_research/classify.py
+/// Based on code in aw_research: https://github.com/KomuTracker/aw-research/blob/master/aw_research/classify.py
 use aw_models::Event;
 use regex::{Regex, RegexBuilder};
 
@@ -59,7 +59,7 @@ impl From<Regex> for Rule {
 /// Categorizes a list of events
 ///
 /// An event can only have one category, although the category may have a hierarchy,
-/// for instance: "Work -> ActivityWatch -> aw-server-rust"
+/// for instance: "Work -> KomuTracker -> aw-server-rust"
 /// If multiple categories match, the deepest one will be chosen.
 pub fn categorize(mut events: Vec<Event>, rules: &[(Vec<String>, Rule)]) -> Vec<Event> {
     let mut classified_events = Vec::new();

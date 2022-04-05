@@ -1,5 +1,5 @@
-/// Basic syncing for ActivityWatch
-/// Based on: https://github.com/ActivityWatch/aw-server/pull/50
+/// Basic syncing for KomuTracker
+/// Based on: https://github.com/KomuTracker/aw-server/pull/50
 ///
 /// This does not handle any direct peer interaction/connections/networking, it works as a "bring your own folder synchronizer".
 ///

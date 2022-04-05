@@ -35,7 +35,7 @@ mod import {
 
     fn dbfile_path() -> PathBuf {
         let mut dir =
-            appdirs::user_data_dir(Some("activitywatch"), Some("activitywatch"), false).unwrap();
+            appdirs::user_data_dir(Some("komutracker"), Some("komutracker"), false).unwrap();
         dir.push("aw-server");
         dir.push("peewee-sqlite.v2.db");
         dir

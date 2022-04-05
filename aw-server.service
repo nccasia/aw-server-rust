@@ -9,7 +9,7 @@
 # 5. (Optional) Run 'systemctl --user enable aw-server-rust.service' to always start aw-server-rust when you log in
 #
 # Now aw-server-rust should be running, you can now start whatever
-# ActivityWatch watchers you desire and can find the WebUI at
+# KomuTracker watchers you desire and can find the WebUI at
 # http://localhost:5600
 #
 
@@ -18,7 +18,7 @@ Type=simple
 ExecStart=aw-server
 
 [Unit]
-Description=ActivityWatch Server (Rust implementation)
+Description=KomuTracker Server (Rust implementation)
 Wants=network.target
 
 [Install]

@@ -9,13 +9,13 @@ use std::sync::Mutex;
 #[cfg(target_os = "android")]
 lazy_static! {
     static ref ANDROID_DATA_DIR: Mutex<PathBuf> = Mutex::new(PathBuf::from(
-        "/data/user/0/net.activitywatch.android/files"
+        "/data/user/0/net.komutracker.android/files"
     ));
 }
 
 #[cfg(not(target_os = "android"))]
 pub fn get_config_dir() -> Result<PathBuf, ()> {
-    let mut dir = appdirs::user_config_dir(Some("activitywatch"), None, false)?;
+    let mut dir = appdirs::user_config_dir(Some("komutracker"), None, false)?;
     dir.push("aw-server-rust");
     fs::create_dir_all(dir.clone()).expect("Unable to create config dir");
     Ok(dir)
@@ -28,7 +28,7 @@ pub fn get_config_dir() -> Result<PathBuf, ()> {
 
 #[cfg(not(target_os = "android"))]
 pub fn get_data_dir() -> Result<PathBuf, ()> {
-    let mut dir = appdirs::user_data_dir(Some("activitywatch"), None, false)?;
+    let mut dir = appdirs::user_data_dir(Some("komutracker"), None, false)?;
     dir.push("aw-server-rust");
     fs::create_dir_all(dir.clone()).expect("Unable to create data dir");
     Ok(dir)
@@ -41,7 +41,7 @@ pub fn get_data_dir() -> Result<PathBuf, ()> {
 
 #[cfg(not(target_os = "android"))]
 pub fn get_cache_dir() -> Result<PathBuf, ()> {
-    let mut dir = appdirs::user_cache_dir(Some("activitywatch"), None)?;
+    let mut dir = appdirs::user_cache_dir(Some("komutracker"), None)?;
     dir.push("aw-server-rust");
     fs::create_dir_all(dir.clone()).expect("Unable to create cache dir");
     Ok(dir)
@@ -54,7 +54,7 @@ pub fn get_cache_dir() -> Result<PathBuf, ()> {
 
 #[cfg(not(target_os = "android"))]
 pub fn get_log_dir() -> Result<PathBuf, ()> {
-    let mut dir = appdirs::user_log_dir(Some("activitywatch"), None)?;
+    let mut dir = appdirs::user_log_dir(Some("komutracker"), None)?;
     dir.push("aw-server-rust");
     fs::create_dir_all(dir.clone()).expect("Unable to create log dir");
     Ok(dir)

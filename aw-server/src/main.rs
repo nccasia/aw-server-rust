@@ -13,7 +13,7 @@ extern crate jemallocator;
 #[global_allocator]
 static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
 
-/// Rust server for ActivityWatch
+/// Rust server for KomuTracker
 #[derive(Parser)]
 #[clap(version = "0.10", author = "Johan Bjäreholt, Erik Bjäreholt")]
 struct Opts {
@@ -167,8 +167,8 @@ fn get_asset_path() -> PathBuf {
 
     // For .app bundles on macOS
     //
-    // On macOS, the executable location is ActivityWatch.app/Contents/MacOS/aw-server-rust,
-    // and the webui location is ActivityWatch.app/Contents/Resources/aw_server_rust/static.
+    // On macOS, the executable location is KomuTracker.app/Contents/MacOS/aw-server-rust,
+    // and the webui location is KomuTracker.app/Contents/Resources/aw_server_rust/static.
     if let Ok(mut current_exe_path) = current_exe() {
         current_exe_path.pop(); // remove name of executable
         current_exe_path.pop(); // step up into the Contents directory

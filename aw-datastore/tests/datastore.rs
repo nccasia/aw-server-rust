@@ -42,7 +42,7 @@ mod datastore_tests {
     pub fn get_cache_dir() -> Result<PathBuf, ()> {
         #[cfg(not(target_os = "android"))]
         {
-            let mut dir = appdirs::user_cache_dir(Some("activitywatch"), None)?;
+            let mut dir = appdirs::user_cache_dir(Some("komutracker"), None)?;
             dir.push("aw-server-rust");
             fs::create_dir_all(dir.clone()).expect("Unable to create cache dir");
             return Ok(dir);
