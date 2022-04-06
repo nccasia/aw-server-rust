@@ -1,6 +1,6 @@
 /// Transforms for classifying (tagging and categorizing) events.
 ///
-/// Based on code in aw_research: https://github.com/KomuTracker/aw-research/blob/master/aw_research/classify.py
+/// Based on code in aw_research: https://github.com/nccasia/aw-research/blob/master/aw_research/classify.py
 use aw_models::Event;
 use regex::{Regex, RegexBuilder};
 

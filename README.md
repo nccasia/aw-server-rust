@@ -1,7 +1,7 @@
 aw-server-rust
 ==============
 
-[![Build Status](https://github.com/KomuTracker/aw-server-rust/workflows/Build/badge.svg?branch=master)](https://github.com/KomuTracker/aw-server-rust/actions?query=workflow%3ABuild+branch%3Amaster)
+[![Build Status](https://github.com/nccasia/aw-server-rust/workflows/Build/badge.svg?branch=master)](https://github.com/nccasia/aw-server-rust/actions?query=workflow%3ABuild+branch%3Amaster)
 [![Coverage Status](https://codecov.io/gh/KomuTracker/aw-server-rust/branch/master/graph/badge.svg)](https://codecov.io/gh/KomuTracker/aw-server-rust)
 [![Dependency Status](https://deps.rs/repo/github/komutracker/aw-server-rust/status.svg)](https://deps.rs/repo/github/komutracker/aw-server-rust)
 
